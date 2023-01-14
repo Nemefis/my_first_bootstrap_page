@@ -1,0 +1,16 @@
+.darkgray {
+    background-color: #c0c0c0;
+}
+.lightgray {
+    background-color: #d9d9d9;
+}
+.yellow {
+    background-color: #ffff54;
+}
+.orange {
+    background-color: #f2a93b;
+}
+.table-hover tbody tr:hover {
+    background-color: darkblue;
+    color: white;
+}

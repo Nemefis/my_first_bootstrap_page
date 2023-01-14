@@ -5,12 +5,72 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя первая Bootstrap страница</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Моя первая Bootstrap страница</h1>
+        <p>С помощью Bootstrap можно создавать адаптивные страницы</p>
+        <div class="row">
+            <div class="col-lg-1 col-sm-6 darkgray">1</div>
+            <div class="col-lg-1 col-sm-6 lightgray">2</div>
+            <div class="col-lg-1 col-sm-6 darkgray">3</div>
+            <div class="col-lg-1 col-sm-6 lightgray">4</div>
+            <div class="col-lg-1 col-sm-6 darkgray">5</div>
+            <div class="col-lg-1 col-sm-6 lightgray">6</div>
+            <div class="col-lg-1 col-sm-6 darkgray">7</div>
+            <div class="col-lg-1 col-sm-6 lightgray">8</div>
+            <div class="col-lg-1 col-sm-6 darkgray">9</div>
+            <div class="col-lg-1 col-sm-6 lightgray">10</div>
+            <div class="col-lg-1 col-sm-6 darkgray">11</div>
+            <div class="col-lg-1 col-sm-6 lightgray">12</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 yellow">.col</div>
+            <div class="col-lg-3 col-sm-6 orange">.col</div>
+            <div class="col-lg-3 col-sm-6 yellow">.col</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 yellow">.col</div>
+            <div class="col-lg-3 col-sm-6 orange">.col</div>
+            <div class="col-lg-2 col-sm-6 yellow">.col</div>
+            <div class="col-lg-1 col-sm-6 orange">.col</div>
+        </div>
+
+        <table class="table table-striped table-hover">            
+            <tr>
+                <th>Фамилия</th>
+                <th>Имя</th>
+                <th>Школа</th>
+            </tr>
+            <tr>
+                <td>Иванов</td>
+                <td>Иван</td>
+                <td>test@test.ru</td>
+            </tr>
+            <tr>
+                <td>Петрова</td>
+                <td>Мария</td>
+                <td>test@test.ru</td>
+            </tr>
+        </table>
+        <div class="alert alert-success" role="alert">
+            <strong>Успех!</strong> Это оповещение указывает на успешное или положительное действие.
+        </div>
+        <div class="alert alert-info" role="alert">
+            A simple info alert—check it out!
+          </div>
+          <div class="alert alert-light" role="alert">
+            A simple light alert—check it out!
+          </div>
+          <div class="alert alert-dark" role="alert">
+            A simple dark alert—check it out!
+          </div>
+            <a href="https://google.com" class="btn btn-primary" target="_blank">Ссылка</a>
+    </div>
 </body>
 </html>
