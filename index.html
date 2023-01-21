@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Bootstrap START -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -12,174 +12,200 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя первая Bootstrap страница</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Панель навигации</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Главная</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Ссылка</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Выпадающий список
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Действие</a></li>
-                  <li><a class="dropdown-item" href="#">Другое действие</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Отключенная</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
-              <button class="btn btn-outline-success" type="submit">Поиск</button>
-            </form>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Панель навигации</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ссылка</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Выпадающий список </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Действие</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Другое действие</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Что-то еще здесь</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Отключенная</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+            <button class="btn btn-outline-success" type="submit">Поиск</button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
     <!-- Dropdowns START -->
     <div class="container">
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
-              Кнопка выпадающего списка
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">1</a></li>
-              <li><a class="dropdown-item" href="#">2</a></li>
-              <li><a class="dropdown-item" href="#">3</a></li>
-              <li><a class="dropdown-item" href="#">4</a></li>
-            </ul>
-          </div>
-          <!-- danger -->
-          <!-- Пример отдельной кнопки danger -->
-<div class="btn-group">
-    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      Действие
-    </button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Действие</a></li>
-      <li><a class="dropdown-item" href="#">Другое действие</a></li>
-      <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Отделенная ссылка</a></li>
-    </ul>
-  </div>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true"> Кнопка выпадающего списка </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li>
+            <a class="dropdown-item" href="#">1</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">2</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">3</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">4</a>
+          </li>
+        </ul>
+      </div>
+      <!-- danger -->
+      <!-- Пример отдельной кнопки danger -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> Действие </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="#">Действие</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Другое действие</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Что-то еще здесь</a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Отделенная ссылка</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- Dropdowns END -->
     <div class="container">
-        <h1>Моя первая Bootstrap страница</h1>
-        <p>С помощью Bootstrap можно создавать адаптивные страницы</p>
+      <h1>Моя первая Bootstrap страница</h1>
+      <p>С помощью Bootstrap можно создавать адаптивные страницы</p>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-1 col-sm-6 darkgray">1</div>
-            <div class="col-lg-1 col-sm-6 lightgray">2</div>
-            <div class="col-lg-1 col-sm-6 darkgray">3</div>
-            <div class="col-lg-1 col-sm-6 lightgray">4</div>
-            <div class="col-lg-1 col-sm-6 darkgray">5</div>
-            <div class="col-lg-1 col-sm-6 lightgray">6</div>
-            <div class="col-lg-1 col-sm-6 darkgray">7</div>
-            <div class="col-lg-1 col-sm-6 lightgray">8</div>
-            <div class="col-lg-1 col-sm-6 darkgray">9</div>
-            <div class="col-lg-1 col-sm-6 lightgray">10</div>
-            <div class="col-lg-1 col-sm-6 darkgray">11</div>
-            <div class="col-lg-1 col-sm-6 lightgray">12</div>
+      <div class="row">
+        <div class="col-lg-1 col-sm-6 darkgray">1</div>
+        <div class="col-lg-1 col-sm-6 lightgray">2</div>
+        <div class="col-lg-1 col-sm-6 darkgray">3</div>
+        <div class="col-lg-1 col-sm-6 lightgray">4</div>
+        <div class="col-lg-1 col-sm-6 darkgray">5</div>
+        <div class="col-lg-1 col-sm-6 lightgray">6</div>
+        <div class="col-lg-1 col-sm-6 darkgray">7</div>
+        <div class="col-lg-1 col-sm-6 lightgray">8</div>
+        <div class="col-lg-1 col-sm-6 darkgray">9</div>
+        <div class="col-lg-1 col-sm-6 lightgray">10</div>
+        <div class="col-lg-1 col-sm-6 darkgray">11</div>
+        <div class="col-lg-1 col-sm-6 lightgray">12</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 yellow">.col</div>
+        <div class="col-lg-3 col-sm-6 orange">.col</div>
+        <div class="col-lg-3 col-sm-6 yellow">.col</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 yellow">.col</div>
+        <div class="col-lg-3 col-sm-6 orange">.col</div>
+        <div class="col-lg-2 col-sm-6 yellow">.col</div>
+        <div class="col-lg-1 col-sm-6 orange">.col</div>
+      </div>
+      <div class="row">
+        <table class="table table-striped table-hover">
+          <tr>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Школа</th>
+          </tr>
+          <tr>
+            <td>Иванов</td>
+            <td>Иван</td>
+            <td>test@test.ru</td>
+          </tr>
+          <tr>
+            <td>Иванов</td>
+            <td>Иван</td>
+            <td>test@test.ru</td>
+          </tr>
+        </table>
+      </div>
+      <div class="row">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <strong>Holy guacamole!</strong> You should check in on some of those fields below. <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-        <div class="row">
-            <div class="col-lg-3 col-sm-6 yellow">.col</div>
-            <div class="col-lg-3 col-sm-6 orange">.col</div>
-            <div class="col-lg-3 col-sm-6 yellow">.col</div>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <strong>Holy guacamole!</strong> You should check in on some of those fields below. <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 yellow">.col</div>
-            <div class="col-lg-3 col-sm-6 orange">.col</div>
-            <div class="col-lg-2 col-sm-6 yellow">.col</div>
-            <div class="col-lg-1 col-sm-6 orange">.col</div>
-        </div>
-        <div class="row">
-            <table class="table table-striped table-hover">
-                <tr>
-                    <th>Фамилия</th>
-                    <th>Имя</th>
-                    <th>Школа</th>
-                </tr>
-                <tr>
-                    <td>Иванов</td>
-                    <td>Иван</td>
-                    <td>test@test.ru</td>
-                </tr>
-                <tr>
-                    <td>Иванов</td>
-                    <td>Иван</td>
-                    <td>test@test.ru</td>
-                </tr>
-            </table>
-        </div>
-        <div class="row">
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        </div>
+      </div>
     </div>
     <!-- Buttons START -->
     <div class="container">
-        <button class="btn btn-primary">Primary</button>
-        <button class="btn btn-secondary">Secondary</button>
-        <button class="btn btn-success">Success</button>
-        <button class="btn btn-danger">Danger</button>
-        <button class="btn btn-warning">Warning</button>
-        <button class="btn btn-info">Info</button>
-        <button class="btn btn-light">Light</button>
-        <button class="btn btn-dark">Dark</button>
-        <button class="btn btn-link">Link</button>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-light">Light</button>
+      <button class="btn btn-dark">Dark</button>
+      <button class="btn btn-link">Link</button>
     </div>
     <div class="container mt-2">
-        <button class="btn btn-outline-primary">Primary</button>
-        <button class="btn btn-outline-secondary">Secondary</button>
-        <button class="btn btn-outline-success">Success</button>
-        <button class="btn btn-outline-danger">Danger</button>
-        <button class="btn btn-outline-warning">Warning</button>
-        <button class="btn btn-outline-info">Info</button>
-        <button class="btn btn-outline-light">Light</button>
-        <button class="btn btn-outline-dark">Dark</button>
-        <button class="btn btn-outline-link">Link</button>
+      <button class="btn btn-outline-primary">Primary</button>
+      <button class="btn btn-outline-secondary">Secondary</button>
+      <button class="btn btn-outline-success">Success</button>
+      <button class="btn btn-outline-danger">Danger</button>
+      <button class="btn btn-outline-warning">Warning</button>
+      <button class="btn btn-outline-info">Info</button>
+      <button class="btn btn-outline-light">Light</button>
+      <button class="btn btn-outline-dark">Dark</button>
+      <button class="btn btn-outline-link">Link</button>
     </div>
     <!-- Buttons END -->
-
-<div class="container">
-    <!-- Пример отдельной кнопки danger -->
-<div class="btn-group">
-    <button type="button" class="btn btn-warning">Действие</button>
-    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-      <span class="visually-hidden">Переключатель выпадающего списка</span>
-    </button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Действие</a></li>
-      <li><a class="dropdown-item" href="#">Другое действие</a></li>
-      <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Отделенная ссылка</a></li>
-    </ul>
-  </div>
-</div>
-
-</body>
+    <div class="container">
+      <!-- Пример отдельной кнопки danger -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-warning">Действие</button>
+        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Переключатель выпадающего списка</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="#">Действие</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Другое действие</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Что-то еще здесь</a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Отделенная ссылка</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>
