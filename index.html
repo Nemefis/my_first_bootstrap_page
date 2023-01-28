@@ -14,6 +14,21 @@
     <title>Моя первая Bootstrap страница</title>
   </head>
   <body>
+  <div class="container">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="false">Главная</button>
+        <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="true">Профиль</button>
+        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Контакт</button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quae modi. Fugit expedita dolorem facilis nesciunt veritatis! Maxime amet rerum nam fugit sapiente? Nulla, ipsam ducimus. Suscipit minus quae eum nisi a quaerat, dignissimos ad sit sunt quod! Error eligendi eveniet pariatur porro ipsa eaque rem voluptatem cum quia dolore.</div>
+      <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem repudiandae tempore expedita voluptatibus necessitatibus laboriosam similique, sapiente iusto quaerat perspiciatis sit fugit tempora corrupti voluptas eaque optio reiciendis asperiores explicabo itaque alias officiis sint in! Pariatur molestiae, nulla, quas doloribus asperiores laudantium aut debitis fugit soluta voluptatum sed id saepe?</div>
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus velit odit vel, minus ea voluptas recusandae sunt aspernatur nesciunt soluta, eaque cupiditate veritatis provident temporibus odio quasi! Aliquid officia numquam maiores. Non, soluta vero architecto hic exercitationem earum dignissimos maxime eveniet perspiciatis facilis, quidem consequuntur. Animi quis inventore dignissimos voluptates.</div>
+    </div>
+  </div>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-danger">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Панель навигации</a>
@@ -44,6 +59,7 @@
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
@@ -62,6 +78,13 @@
           </div>
           <div class="carousel-item">
             <img src="3.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Метка третьего слайда</h5>
+              <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="1.jpeg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Метка третьего слайда</h5>
               <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
@@ -256,6 +279,21 @@
         <div class="col-lg-3 shadow-lg"><p>Большая тень</p></div>
       </div>
     </div>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">1</div>
+        <div class="col-lg-6">2</div>
+        <div class="col-lg-6">3</div>
+        <div class="col-lg-6">4</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">11</div>
+        <div class="col-lg-6">22</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">33</div>
+        <div class="col-lg-6">44</div>
+      </div>
+    </div>
   </body>
 </html>
